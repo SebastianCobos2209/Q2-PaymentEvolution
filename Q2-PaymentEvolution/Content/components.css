@@ -87,9 +87,6 @@
         scroll-snap-align: start;
         flex: 0 0 280px; 
     }
-    .k-listview-content {
-        display: contents !important;
-    }
 }
 
 .k-listview-content {

@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<link href="@Url.Content("~/Content/components.css")" rel="stylesheet" />
+
+<div id="appsCardView" data-url="@Url.Action("GetApplications", "Apps")"></div>
+
+<script type="text/x-kendo-template" id="appCardTemplate">
+    <div class="app-card">
+        <div class="app-avatar-badge">#: AppAvatar #</div>
+        <div class="app-container">
+            <h4 class="app-name">#: AppName #</h4>
+            <p class="app-description">#: kendo.toString(AppDetails).substring(0, 50) #...</p>
+            <button class="invite-btn k-button" data-appid="#: AppID #" data-state="invite">
+                <span class="k-icon k-i-check"></span> Invite Sent
+            </button>
+        </div>
+    </div>
+</script>
+
+@section scripts {
+    <script src="@Url.Content("~/Scripts/AppsScript/KendoListView.js")"></script>
+    <script src="@Url.Content("~/Scripts/AppsScript/Buttons.js")"></script>
+    <script src="@Url.Content("~/Scripts/app-init.js")"></script>
+}

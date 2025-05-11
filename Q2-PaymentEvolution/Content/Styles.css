@@ -1,0 +1,18 @@
+﻿body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #EADEFC;
+}
+nav {
+    height: 150px;
+    background: linear-gradient(135deg, #2F0A6B 0%, #5E2AB2 100%);
+    color: #F8F1E5; 
+    border-bottom: 3px solid #FFD700; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    transition: all 0.3s ease;
+}

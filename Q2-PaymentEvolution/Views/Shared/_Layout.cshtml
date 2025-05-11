@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @RenderSection("styles", required: false)
+    <link href="@Url.Content("~/Content/Styles.css")" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <h1>Application to demonstrate the use of kendo List view </h1>
+    </nav>
+
+
+    <div class="container body-content">
+    @RenderBody()
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.617/js/kendo.ui.core.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
